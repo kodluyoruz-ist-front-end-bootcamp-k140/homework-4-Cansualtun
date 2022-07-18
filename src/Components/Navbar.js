@@ -1,4 +1,5 @@
 import React from "react";
+import { FaShoppingBasket } from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -6,7 +7,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            PetshopApp
+            BookApp
           </a>
           <button
             className="navbar-toggler"
@@ -37,6 +38,18 @@ function Navbar() {
                 </a>
               </li>
             </ul>
+            <div style={{ marginLeft: 1100 }}>
+              <a
+                className="nav-link"
+                href="/Chart"
+                style={{ marginRight: 100 }}
+              >
+                MyChart
+                <span>
+                  <FaShoppingBasket />
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </nav>

@@ -1,80 +1,17 @@
 import React from "react";
 
-function Product() {
+function Product({ item, handleClick }) {
+  const { title, author, price, img } = item;
   return (
-    <div>
-      <div className="card-group" style={{ spacebetween: 20 }}>
-        <div className="card">
-          <img src="..." className="card-img-top" alt="..."></img>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p className="card-text">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </p>
-            <button
-              onClick={
-                "location.href='/src/Components/Home.js'"
-              } /*Üzerine Çalışılacak */
-              type="button"
-              className="btn btn-warning"
-              style={{ marginLeft: 100, marginTop: 50 }}
-            >
-              Add To Chart
-            </button>
-          </div>
-        </div>
-        <div className="card">
-          <img src="..." className="card-img-top" alt="..."></img>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </p>
-            <p className="card-text">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </p>
-            <button
-              onClick={
-                "location.href='/src/Components/Home.js'"
-              } /*Üzerine Çalışılacak */
-              type="button"
-              className="btn btn-warning"
-              style={{ marginLeft: 100, marginTop: 70 }}
-            >
-              Add To Chart
-            </button>
-          </div>
-        </div>
-        <div className="card">
-          <img src="..." className="card-img-top" alt="..."></img>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </p>
-            <p className="card-text">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </p>
-            <button
-              onClick={
-                "location.href='/src/Components/Home.js'"
-              } /*Üzerine Çalışılacak */
-              type="button"
-              className="btn btn-warning"
-              style={{ marginLeft: 50 }}
-            >
-              Add To Chart
-            </button>
-          </div>
-        </div>
+    <div className="cards">
+      <div className="image_box">
+        <img src={img} alt="" />
+      </div>
+      <div className="details">
+        <p>{title}</p>
+        <p>{author}</p>
+        <p>Price - {price}Rs</p>
+        <button onClick={() => handleClick(item)}>Add to Cart</button>
       </div>
     </div>
   );

@@ -6,16 +6,21 @@ function Home() {
       <section>
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
           <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
-            <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
+            <div
+              class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last"
+              className="card hover:scale-105 duration-200"
+            >
               <img
-                class="absolute   w-full h-full"
-                src="https://www.ideasoft.com.tr/wp-content/uploads/2018/05/online-petshop-acmak-petshop-urunleri-satmak-1-1024x536.jpg"
+                class="absolute border-10  w-full h-full"
+                src="https://blog.ofix.com/wp-content/uploads/2018/09/kirtasiye_alisverisleri_ofix_blog_1_3.jpg"
                 alt="PetShop"
               />
             </div>
 
             <div class="lg:py-24">
-              <h2 class="text-3xl font-bold sm:text-4xl">Let Start Shop!</h2>
+              <h2 class="text-3xl font-bold sm:text-4xl">
+                Let Start Shopping!
+              </h2>
 
               <p class="mt-4 text-gray-600">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
@@ -26,7 +31,7 @@ function Home() {
 
               <a
                 class="inline-flex items-center px-8 py-3 mt-8 text-white bg-indigo-600 border border-indigo-600 rounded hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring"
-                href="/get-started"
+                href="/Product"
               >
                 <span class="text-sm font-medium"> Get Started </span>
 
