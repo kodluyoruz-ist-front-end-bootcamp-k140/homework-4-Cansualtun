@@ -6,7 +6,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Homework4
+            PetshopApp
           </a>
           <button
             className="navbar-toggler"
@@ -27,8 +27,8 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/About">
-                  About
+                <a className="nav-link" href="/Product">
+                  Product
                 </a>
               </li>
               <li className="nav-item">

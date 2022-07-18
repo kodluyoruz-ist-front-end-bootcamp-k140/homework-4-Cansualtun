@@ -2,8 +2,8 @@ import React from "react";
 
 function Contact() {
   return (
-    <div>
-      <div className="mb-3">
+    <div class="container-sm" style={{ marginTop: 60, padding: 20 }}>
+      <div className="mb-4">
         <label for="exampleFormControlInput1" className="form-label">
           Email address
         </label>
@@ -24,9 +24,12 @@ function Contact() {
           rows="3"
         ></textarea>
         <button
+          onClick={
+            "location.href='/src/Components/Home.js'"
+          } /*Üzerine Çalışılacak */
           type="button"
           className="btn btn-warning"
-          style={{ marginLeft: 700, marginTop: 40 }}
+          style={{ marginLeft: 600, marginTop: 40 }}
         >
           Send
         </button>
