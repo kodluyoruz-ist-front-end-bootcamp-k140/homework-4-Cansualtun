@@ -1,10 +1,10 @@
 import React from "react";
 
-function Product({ item, handleClick }) {
+const Card = ({ item, handleClick }) => {
   const { title, author, price, img } = item;
   return (
     <div className="cards">
-      <div className="image_box">
+      <div className="image-box">
         <img src={img} alt="" />
       </div>
       <div className="details">
@@ -15,6 +15,6 @@ function Product({ item, handleClick }) {
       </div>
     </div>
   );
-}
+};
 
-export default Product;
+export default Card;
