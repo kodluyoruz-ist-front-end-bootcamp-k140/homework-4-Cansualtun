@@ -7,7 +7,7 @@ function Footer() {
       <footer className="bg-gray-50">
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
           <div className="sm:flex sm:items-center sm:justify-between">
-            <span class="inline-grid grid-cols-3 gap-4">
+            <span className="inline-grid grid-cols-3 gap-4">
               <a href="https://github.com/Cansualtun" target="blank">
                 <FaGithub style={{ height: 80, width: 50 }} />
               </a>

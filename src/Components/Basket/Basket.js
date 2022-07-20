@@ -1,30 +1,27 @@
-import React, { useState, useEffect } from "react";
-import "./Chart.css";
+import React from "react";
+import { useState, useEffect } from "react";
 
-const Chart = ({ Chart, setChart, handleChange }) => {
+const Basket = ({ basket, setBasket, handleChange }) => {
   const [price, setPrice] = useState(0);
 
   const handleRemove = (id) => {
-    const arr = Chart.filter((item) => item.id !== id);
-    setChart(arr);
+    const arr = basket.filter((item) => item.id !== id);
+    setBasket(arr);
     handlePrice();
   };
-
   const handlePrice = () => {
     let ans = 0;
-    Chart.map((item) => (ans += item.amount * item.price));
+    basket.map((item) => (ans += item.amount * item.price));
     setPrice(ans);
   };
-
   useEffect(() => {
     handlePrice();
   });
-
   return (
     <article>
-      {Chart.map((item) => (
-        <div className="Chart_box" key={item.id}>
-          <div className="Chart_img">
+      {basket.map((item) => (
+        <div className="basket_box" key={item.id}>
+          <div className="basket_img">
             <img src={item.img} alt="" />
             <p>{item.title}</p>
           </div>
@@ -40,11 +37,11 @@ const Chart = ({ Chart, setChart, handleChange }) => {
         </div>
       ))}
       <div className="total">
-        <span>Total Price of your Chart</span>
+        <span>Total Price of your basket</span>
         <span>Rs - {price}</span>
       </div>
     </article>
   );
 };
 
-export default Chart;
+export default Basket;

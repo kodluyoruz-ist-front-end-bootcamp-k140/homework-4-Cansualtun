@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div class="container-sm" style={{ marginTop: 60, padding: 20 }}>
+    <div className="container-sm" style={{ marginTop: 60, padding: 20 }}>
       <div className="mb-4">
         <label for="exampleFormControlInput1" className="form-label">
           Email address
