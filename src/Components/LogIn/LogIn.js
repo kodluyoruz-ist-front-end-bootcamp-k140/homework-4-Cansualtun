@@ -89,12 +89,17 @@ function LogIn() {
                 <Link to="/SignUp">SignUp</Link>
               </li>
             </p>
-            <button
-              type="submit"
-              className="inline-block px-5 py-3 mr-40 text-sm font-medium text-white bg-teal-600 rounded-lg"
-            >
-              Log In
-            </button>
+            {/*
+          Bu kısımda error page'e düşmesi için bilerek geçersiz bir link verilmiştir.
+            */}
+            <Link to="random">
+              <button
+                type="submit"
+                className="inline-block px-5 py-3 mr-40 text-sm font-medium text-white bg-teal-600 rounded-lg"
+              >
+                Log In
+              </button>
+            </Link>
           </div>
         </form>
       </div>

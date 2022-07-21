@@ -6,7 +6,6 @@ import Navbar from "../src/Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import SignUp from "./Components/SignUp/SignUp";
 import LogIn from "./Components/LogIn/LogIn";
-import Basket from "./Components/Basket/Basket";
 import ErrorPage from "./Components/ErrorPage";
 import { Routes, Route } from "react-router-dom";
 
@@ -20,7 +19,6 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/LogIn" element={<LogIn />} />
-        <Route path="/Basket" element={<Basket />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

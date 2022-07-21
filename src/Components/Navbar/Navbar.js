@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
-import { FaShoppingBasket } from "react-icons/fa";
 
 const Navbar = ({ setShow, size }) => {
   return (
@@ -10,6 +8,7 @@ const Navbar = ({ setShow, size }) => {
         <div className="flex items-center justify-between h-16">
           <div className="md:flex md:items-center md:gap-12">
             <a className="block text-teal-300" href="/">
+              <h1 style={{ marginRight: 60 }}>Book App</h1>
               <span className="sr-only">Home</span>
               <svg
                 className="h-8"
@@ -27,9 +26,6 @@ const Navbar = ({ setShow, size }) => {
 
           <div className="hidden md:block">
             <nav aria-labelledby="header-navigation">
-              <h2 className="sr-only" id="header-navigation">
-                Header navigation
-              </h2>
               <ul className="flex items-center gap-6 text-sm text-white">
                 <li>
                   <Link to="/">Home</Link>
@@ -75,12 +71,6 @@ const Navbar = ({ setShow, size }) => {
                 </svg>
               </button>
             </div>
-          </div>
-          <div className="Basket" onClick={() => setShow(false)}>
-            <span className="text-white h-50">
-              <FaShoppingBasket />
-            </span>
-            <span>{size}</span>
           </div>
         </div>
       </div>

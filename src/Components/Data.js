@@ -1,3 +1,4 @@
+//Datalar bu klasörden çekilmiştir.
 const list = [
   {
     id: 1,

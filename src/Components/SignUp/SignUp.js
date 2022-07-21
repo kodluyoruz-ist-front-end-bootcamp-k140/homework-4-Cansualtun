@@ -121,13 +121,14 @@ function SignUp() {
             </div>
 
             <div className="flex items-center justify-between">
-              <button
-                type="submit"
-                className="inline-block px-5 py-3 ml-40 text-sm font-medium text-white bg-teal-600 rounded-lg"
-              >
-                <Link to="/Home"></Link>
-                Sign In
-              </button>
+              <Link to="/LogIn">
+                <button
+                  type="submit"
+                  className="inline-block px-5 py-3 ml-40 text-sm font-medium text-white bg-teal-600 rounded-lg"
+                >
+                  Sign In
+                </button>
+              </Link>
             </div>
           </form>
         </div>
